@@ -20,7 +20,18 @@ public class c3_2 {
         int count = 0;
         int max = arr[arr.length-1];
         int second_max = arr[arr.length-2];
-        
+
+        while(m!=0){
+            for(int i=0; i<k; i++){
+                if(m==0) break;
+                count += max;
+                m--;
+            }
+            count += second_max;
+            m--;
+
+        }
+        System.out.println(count);
 
     }
 }
